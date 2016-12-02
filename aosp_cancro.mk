@@ -20,6 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from cancro device
 $(call inherit-product, device/xiaomi/cancro/cancro.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/cancro/cancro-vendor.mk)
 
 PRODUCT_NAME := aosp_cancro
 PRODUCT_DEVICE := cancro
